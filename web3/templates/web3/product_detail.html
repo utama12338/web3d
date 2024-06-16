@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Detail</title>
+</head>
+<body>
+    <h1>รายละเอียดสินค้า</h1>
+    <div>
+        <h2>{{ product.name }}</h2>
+        <img src="{{ product.image.url }}" alt="Product Image">
+        <p><strong>รายละเอียด: </strong>{{ product.description }}</p>
+        <p><strong>ราคา: </strong>{{ product.price }}</p>
+        <p><strong>รายละเอียดเพิ่มเติม: </strong>{{ product.additional_details }}</p>
+    </div>
+    <a href="{% url 'product_list' %}">กลับไปยังรายการสินค้า</a>
+</body>
+</html>

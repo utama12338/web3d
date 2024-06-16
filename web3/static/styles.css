@@ -1,0 +1,94 @@
+/* styles.css */
+
+/* Body and Container Styles */
+
+body {
+    background-color: #939393; /* Light background */
+    color: #333; /* Dark text */
+    font-family: 'Roboto', sans-serif; /* Example font */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: absolute;
+    left: 37%;
+    top: 50px;
+    width: 300px;
+    margin: 80px auto;
+    padding: 20px;
+    background-image: linear-gradient(to top, #ffe5e5, #def6ff);
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+/* Heading Styles */
+h2 {
+    text-align: center;
+    color: #55aaff; /* Sci-fi blue */
+    text-shadow: 0 0 10px #55aaff; /* Neon glow */
+}
+
+/* Form and Input Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #55aaff; /* Sci-fi blue */
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #55aaff; /* Sci-fi blue border */
+    border-radius: 4px;
+    background-color: #f0f0f0; /* Light input background */
+    color: #333; /* Dark text */
+    box-shadow: 0 0 10px #55aaff; /* Neon glow */
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #55aaff; /* Sci-fi blue */
+    color: #fff; /* White text */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px #55aaff; /* Neon glow */
+}
+
+input[type="submit"]:hover {
+    background-color: #1a1aff; /* Darker blue on hover */
+}
+
+a[type="submita"] {
+    text-decoration: none;
+    display: inline-block; /* ทำให้ปุ่มเป็นพื้นที่ในแนวนอนเท่ากับข้อความ */
+    padding: 10px 20px; /* ขนาดของ padding สำหรับปุ่ม */
+    border: none; /* ลบเส้นขอบ */
+    background-color: #55aaff; /* สีพื้นหลังของปุ่ม */
+    color: #fff; /* สีของข้อความ */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็น pointer เมื่อชี้ไปที่ปุ่ม */
+    transition: background-color 0.3s ease; /* เพิ่มเอฟเฟกต์การเปลี่ยนสีพื้นหลังเมื่อ hover */
+    text-align: center; /* จัดให้ข้อความอยู่ตรงกลางภายในปุ่ม */
+    width: 200px; /* กำหนดความกว้างของปุ่ม */
+    margin: 0 auto; /* ทำให้ปุ่มอยู่ตรงกลางใน container */
+    border-radius: 5px; /* ทำให้มีเส้นมน */
+}
+
+a[type="submita"]:hover {
+    background-color: #464646; /* Darker blue on hover */
+}
+
+/* Error Message Styles */
+.error-message {
+    color: #ff5555; /* Red for errors */
+    text-align: center;
+    margin-top: 10px;
+    text-shadow: 0 0 10px #ff5555; /* Neon glow */
+}
+
